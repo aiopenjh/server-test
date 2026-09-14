@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="AWS 클라우드의 핵심 개념과 서비스를 정리한 학습 노트" />
+    <title>AWS 학습 노트</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="AWS 학습 노트 처음으로">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span>AWS STUDY LOG</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#concept">클라우드</a>
+        <a href="#services">핵심 서비스</a>
+        <a href="#roadmap">학습 순서</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Cloud Computing · 2026</p>
+          <h1 id="hero-title">클라우드를 배우는<br /><span>가장 확실한 방법.</span></h1>
+          <p class="hero-description">
+            AWS의 기본 개념부터 컴퓨팅, 스토리지, 데이터베이스까지.<br class="desktop-only" />
+            수업에서 배운 내용을 한눈에 복습하는 작은 학습 공간입니다.
+          </p>
+          <a class="primary-link" href="#services">핵심 서비스 살펴보기 <span aria-hidden="true">↘</span></a>
+        </div>
+
+        <div class="orbit-card" aria-label="AWS 클라우드 핵심 영역">
+          <div class="orbit orbit-one"><span>EC2</span></div>
+          <div class="orbit orbit-two"><span>S3</span></div>
+          <div class="orbit orbit-three"><span>RDS</span></div>
+          <div class="cloud-core">
+            <span class="core-label">AWS</span>
+            <strong>CLOUD</strong>
+          </div>
+          <p>필요한 IT 자원을<br />인터넷으로 사용합니다.</p>
+        </div>
+      </section>
+
+      <section class="concept" id="concept" aria-labelledby="concept-title">
+        <div class="section-number">01</div>
+        <div class="section-heading">
+          <p class="eyebrow">WHAT IS CLOUD?</p>
+          <h2 id="concept-title">필요할 때 꺼내 쓰는<br />IT 자원</h2>
+        </div>
+        <div class="concept-copy">
+          <p>
+            클라우드 컴퓨팅은 서버, 저장 공간, 데이터베이스 같은 IT 자원을 직접 소유하는 대신 필요할 때 이용하는 방식입니다.
+          </p>
+          <p>
+            초기 비용을 줄이고, 사용량 변화에 맞춰 자원을 빠르게 늘리거나 줄일 수 있다는 점이 핵심입니다.
+          </p>
+        </div>
+      </section>
+
+      <section class="services" id="services" aria-labelledby="services-title">
+        <div class="services-heading">
+          <div>
+            <p class="eyebrow">CORE SERVICES</p>
+            <h2 id="services-title">먼저 알아둘 4가지</h2>
+          </div>
+          <p>서비스 이름보다 “무엇을 해결하는가”를 중심으로 정리했습니다.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card featured">
+            <div class="card-top"><span>COMPUTE</span><span>01</span></div>
+            <div class="service-icon" aria-hidden="true">⬡</div>
+            <h3>Amazon EC2</h3>
+            <p>웹 서버나 애플리케이션을 실행할 수 있는 가상 컴퓨터 서비스</p>
+            <div class="keyword">키워드 · 가상 서버</div>
+          </article>
+          <article class="service-card">
+            <div class="card-top"><span>STORAGE</span><span>02</span></div>
+            <div class="service-icon" aria-hidden="true">▰</div>
+            <h3>Amazon S3</h3>
+            <p>이미지, 문서, 백업 파일 등 다양한 데이터를 저장하는 객체 스토리지</p>
+            <div class="keyword">키워드 · 파일 저장</div>
+          </article>
+          <article class="service-card">
+            <div class="card-top"><span>DATABASE</span><span>03</span></div>
+            <div class="service-icon" aria-hidden="true">◫</div>
+            <h3>Amazon RDS</h3>
+            <p>관계형 데이터베이스의 설정과 운영 부담을 줄여주는 관리형 서비스</p>
+            <div class="keyword">키워드 · 데이터베이스</div>
+          </article>
+          <article class="service-card">
+            <div class="card-top"><span>NETWORK</span><span>04</span></div>
+            <div class="service-icon" aria-hidden="true">⌁</div>
+            <h3>Amazon VPC</h3>
+            <p>AWS 안에 논리적으로 분리된 나만의 네트워크 환경을 만드는 서비스</p>
+            <div class="keyword">키워드 · 가상 네트워크</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="roadmap" id="roadmap" aria-labelledby="roadmap-title">
+        <div class="roadmap-intro">
+          <p class="eyebrow">LEARNING ROADMAP</p>
+          <h2 id="roadmap-title">작게 만들고,<br />직접 연결해 보기</h2>
+          <p>개념을 읽은 뒤 간단한 웹사이트를 배포해 보면 서비스들이 어떻게 연결되는지 빠르게 이해할 수 있습니다.</p>
+        </div>
+        <ol class="steps">
+          <li><span>01</span><div><strong>기초 개념 익히기</strong><p>리전, 가용 영역, 공동 책임 모델 이해</p></div></li>
+          <li><span>02</span><div><strong>핵심 서비스 비교하기</strong><p>컴퓨팅·스토리지·데이터베이스의 역할 구분</p></div></li>
+          <li><span>03</span><div><strong>작은 프로젝트 배포하기</strong><p>정적 웹사이트를 올리고 공개 주소 확인</p></div></li>
+        </ol>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-mark">AWS<br />STUDY</div>
+      <p>클라우드 컴퓨팅 학습을 위한 개인 정리 페이지</p>
+      <a href="#top">맨 위로 ↑</a>
+    </footer>
+  </body>
+</html>
